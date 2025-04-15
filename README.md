@@ -24,7 +24,7 @@ This study systematically compares the performance of three large language model
 - All scripts written in Python 3.9
 
 ## Repository Structure
-
+'''
 llm-cardiology-eval/
 ├── data/
 │   ├── 1_DoctorAI_reorg.xlsx
@@ -44,7 +44,7 @@ llm-cardiology-eval/
 ├── LICENSE
 ├── CITATION.cff
 └── README.md
-
+'''
 ## Data Availability
 
 All data used in this study are available in anonymized form under the `/data` directory. Original prompts, evaluation scores, and reliability statistics are included.
