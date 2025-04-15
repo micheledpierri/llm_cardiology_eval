@@ -52,7 +52,7 @@ All data used in this study are available in anonymized form under the `/data` d
 ## Reproducing the Analysis
 
 1. Clone the repository:
-   git clone https://github.com/your-username/llm-cardiology-eval.git
+   git clone https://github.com/micheledpierri/llm-cardiology-eval.git
    cd llm-cardiology-eval
 
 2. Create virtual environment and install dependencies:
