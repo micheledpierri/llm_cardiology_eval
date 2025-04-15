@@ -73,6 +73,6 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 
 If you use this work, please cite it using the `CITATION.cff` file
 
-## 🤝 Contact
+## Contact
 
-For questions, please contact: micheled.pierri@ospedaliriuniti.marche.it
+For questions, please contact: micheledanilo.pierri@ospedaliriuniti.marche.it
