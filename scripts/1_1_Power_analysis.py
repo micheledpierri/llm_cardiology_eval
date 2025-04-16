@@ -1,6 +1,6 @@
 # ------------------------------------------------------------
-# DoctorAI - Pilot Study and power analysis
-# Michele Danilo Pierri
+# LLMs Evaluation - Pilot Study and power analysis
+# Michele Danilo Pierri MD PhD
 # 30/03/2024
 # ------------------------------------------------------------
 
