@@ -30,11 +30,10 @@ llm-cardiology-eval/
 ├── data/
 │   ├── 1_DoctorAI_reorg.xlsx
 │   ├── 1_DoctorAI_words.xlsx
-│   └── 1_DoctorAI_kendall.xlsx
 ├── scripts/
-│   ├── analysis_main.py
-│   ├── interrater_analysis.py
-│   ├── sensitivity_analysis.py
+│   ├── 1_1_Power_Analysis.py
+│   ├── 1_2_Statistical_Analysis.py
+│   ├── 1_3_Sensitivity_Analysis.py
 │   └── plot_figures.py
 ├── figures/
 │   ├── Figure1_scores_by_model.png
