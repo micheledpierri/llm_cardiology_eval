@@ -4,6 +4,10 @@ This repository contains all data, code, and figures related to the study:
 
 **"Evaluating Large Language Models in Cardiology: A Comparative Study of ChatGPT, Claude, and Gemini"**
 
+[![Python](https://img.shields.io/badge/python-3.12.4-blue.svg)](https://www.python.org/downloads/release/python-3124/)
+[![requirements](https://img.shields.io/badge/install-pip--requirements.txt-brightgreen)](./requirements.txt)
+
+
 ## Abstract
 
 This study systematically compares the performance of three large language models (ChatGPT, Claude, and Gemini) in cardiology-related clinical scenarios. Using 70 simulated prompts representing both pre- and post-diagnostic phases and two user profiles (patient and doctor), responses were rated by three expert cardiologists on four quality criteria: scientific accuracy, completeness, clarity, and coherence. Statistical analyses confirmed ChatGPT’s superiority, though no model achieved maximal performance. Results support the need for domain-specific fine-tuning and human-in-the-loop oversight.
@@ -27,6 +31,7 @@ This study systematically compares the performance of three large language model
 
 ```text
 llm-cardiology-eval/
+requirements.txt
 ├── data/
 │   ├── 1_DoctorAI_reorg.xlsx
 │   ├── 1_DoctorAI_words.xlsx
@@ -56,9 +61,7 @@ All data used in this study are available in anonymized form under the `/data` d
    git clone https://github.com/micheledpierri/llm-cardiology-eval.git
    cd llm-cardiology-eval
 
-2. Create virtual environment and install dependencies:
-   python -m venv venv
-   source venv/bin/activate  (on Windows: venv\Scripts\activate)
+2. Install required Python packages:
    pip install -r requirements.txt
 
 3. Run main analysis:
