@@ -1,6 +1,6 @@
 # ------------------------------------------------------------
-# DoctorAI - Statistical Analysis
-# Michele Danilo Pierri
+# LLMs Evaluation - Statistical Analysis
+# Michele Danilo Pierri MD PhD
 # 30/03/2024
 # ------------------------------------------------------------
 
