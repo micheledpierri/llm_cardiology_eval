@@ -53,7 +53,7 @@ requirements.txt
 ```
 ## Reproducibility
 To reproduce the figures and statistical analyses, make sure that the datasets and scripts are correctly located.
-**Figure scripts assume that the corresponding Excel files are in the same directory.** If you keep datasets in a separate folder (e.g., `data/`), update the `file_path` variable at the beginning of each script accordingly.
+**All scripts assume that the corresponding Excel files are in the same directory.** If you keep datasets in a separate folder (e.g., `data/`), update the `file_path` variable at the beginning of each script accordingly.
 
 ## Data Availability
 
