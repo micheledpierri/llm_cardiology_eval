@@ -39,17 +39,21 @@ requirements.txt
 │   ├── 1_1_Power_Analysis.py
 │   ├── 1_2_Statistical_Analysis.py
 │   ├── 1_3_Sensitivity_Analysis.py
-│   └── plot_figures.py
+│   ├── 1_4_Figure_1.py
+│   └── 1_5_Figure_2.py
 ├── figures/
-│   ├── Figure1_scores_by_model.png
-│   └── Figure2_dunn_heatmap.png
+│   ├── Figure1.png
+│   └── Figure2.png
 ├── tables/
-│   ├── Table1_KendallW.csv
+│   ├── 
 │   ├── ...
 ├── LICENSE
 ├── CITATION.cff
 └── README.md
 ```
+## Reproducibility
+To reproduce the figures and statistical analyses, make sure that the datasets and scripts are correctly located.
+**Figure scripts assume that the corresponding Excel files are in the same directory.** If you keep datasets in a separate folder (e.g., `data/`), update the `file_path` variable at the beginning of each script accordingly.
 
 ## Data Availability
 
