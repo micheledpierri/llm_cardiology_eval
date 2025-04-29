@@ -33,20 +33,35 @@ This study systematically compares the performance of three large language model
 llm-cardiology-eval/
 requirements.txt
 ├── data/
-│   ├── 1_DoctorAI_reorg.xlsx
-│   ├── 1_DoctorAI_words.xlsx
+│   ├── 1_Pilot.xlsx
+│   ├── 2_Data.xlsx
 ├── scripts/
-│   ├── 1_1_Power_Analysis.py
-│   ├── 1_2_Statistical_Analysis.py
-│   ├── 1_3_Sensitivity_Analysis.py
-│   ├── 1_4_Figure_1.py
-│   └── 1_5_Figure_2.py
+│   ├── 1_Power_Analysis.py
+│   ├── 2_Reliability_Analysis.py
+│   ├── 3_Statistical_Analysis.py
+│   ├── 4_Sensitivity_Analysis.py
+│   ├── 5_Figure_1.py
+│   ├── 6_Figure_2.py
+│   ├── 7_Figure_3.py
+│   └── 8_Figure_4.py
 ├── figures/
-│   ├── Figure1.png
-│   └── Figure2.png
+│   ├── Figure1.pdf
+│   ├── Figure2.pdf
+│   ├── Figure_DiagnosticPhase.pdf
+│   └── Figure_UserType.pdf
 ├── tables/
-│   ├── 
-│   ├── ...
+│   ├──reliability_kappa.csv
+│   ├──reliability_kendall.csv
+│   ├──reliability_kendall_fiedman.csv
+│   ├──sensitivity_analysis.csv
+│   ├──reliability_kappa.csv   
+│   ├──stat_analysis_descriptive.csv
+│   ├──stat_analysis_diagnostic_phase.csv
+│   ├──stat_analysis_kruskal.csv
+│   ├──stat_analysis_posthoc_dunn.csv
+│   ├──stat_analysis_power.csv
+│   ├──stat_analysis_shapiro.csv
+│   └──stat_analysis_user_type.csv
 ├── LICENSE
 ├── CITATION.cff
 └── README.md
