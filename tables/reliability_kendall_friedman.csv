@@ -1,0 +1,5 @@
+Criterion,Kendall's W (friedman),p-value
+Accuracy,0.113,0.0
+Completeness,0.042,0.0002
+Clarity,0.011,0.1082
+Coherence,0.04,0.0002
