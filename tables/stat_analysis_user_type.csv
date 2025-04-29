@@ -1,0 +1,5 @@
+Criterion,Mean Patient,Mean Doctor,Δ Patient - Doctor,95% CI,U statistic,p-value,Significant
+Accuracy,3.683,3.374,0.308,[0.167 to 0.448],57722.0,0.0,True
+Completeness,3.469,3.185,0.283,[0.113 to 0.456],55665.0,0.0011,True
+Clarity,3.992,3.548,0.444,[0.304 to 0.586],61083.0,0.0,True
+Coherence,4.097,3.789,0.308,[0.175 to 0.444],57434.5,0.0,True

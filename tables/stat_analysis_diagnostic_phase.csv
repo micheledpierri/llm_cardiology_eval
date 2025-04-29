@@ -1,0 +1,5 @@
+Criterion,Mean Pre,Mean Post,Δ Post - Pre,95% CI,U statistic,p-value,Significant
+Accuracy,3.65,3.457,-0.193,[-0.329 to -0.055],43718.5,0.0068,True
+Completeness,3.493,3.21,-0.283,[-0.449 to -0.114],42722.0,0.0017,True
+Clarity,3.899,3.71,-0.189,[-0.327 to -0.051],44389.0,0.0159,True
+Coherence,4.026,3.907,-0.12,[-0.246 to 0.008],46481.0,0.1436,False

@@ -1,0 +1,13 @@
+Criterion,Model A,Model B,Δ Mean,95% CI,p-value
+Accuracy,ChatGPT,Claude,0.124,[-0.048 to 0.290],0.5121
+Accuracy,ChatGPT,Gemini,0.353,[0.186 to 0.519],0.0001
+Accuracy,Claude,Gemini,0.228,[0.057 to 0.400],0.0177
+Completeness,ChatGPT,Claude,0.281,[0.110 to 0.452],0.019
+Completeness,ChatGPT,Gemini,0.762,[0.552 to 0.962],0.0
+Completeness,Claude,Gemini,0.482,[0.271 to 0.690],0.0001
+Clarity,ChatGPT,Claude,0.152,[-0.010 to 0.310],0.2417
+Clarity,ChatGPT,Gemini,0.456,[0.286 to 0.624],0.0
+Clarity,Claude,Gemini,0.305,[0.133 to 0.481],0.0022
+Coherence,ChatGPT,Claude,0.167,[0.019 to 0.310],0.066
+Coherence,ChatGPT,Gemini,0.466,[0.310 to 0.624],0.0
+Coherence,Claude,Gemini,0.3,[0.143 to 0.462],0.0029

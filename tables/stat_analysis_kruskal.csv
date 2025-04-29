@@ -1,0 +1,5 @@
+Criterion,H-statistic,p-value,Significant
+Accuracy,17.644,0.0001,True
+Completeness,46.772,0.0,True
+Clarity,27.082,0.0,True
+Coherence,31.564,0.0,True

@@ -1,0 +1,13 @@
+Excluded Reviewer,Criterion,Kruskal-Wallis H,p-value,Significant (p < 0.05)
+Reviewer1,Accuracy,6.382,0.0411,True
+Reviewer1,Completeness,17.853,0.0001,True
+Reviewer1,Clarity,7.998,0.0183,True
+Reviewer1,Coherence,11.061,0.004,True
+Reviewer2,Accuracy,9.739,0.0077,True
+Reviewer2,Completeness,16.893,0.0002,True
+Reviewer2,Clarity,10.461,0.0053,True
+Reviewer2,Coherence,16.078,0.0003,True
+Reviewer3,Accuracy,7.202,0.0273,True
+Reviewer3,Completeness,19.234,0.0001,True
+Reviewer3,Clarity,16.639,0.0002,True
+Reviewer3,Coherence,14.118,0.0009,True

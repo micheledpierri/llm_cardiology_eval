@@ -1,0 +1,13 @@
+Model,Criterion,N,Mean,Median,SD,IQR
+ChatGPT,Accuracy,210,3.71,4.0,0.862,1.0
+Claude,Accuracy,210,3.586,4.0,0.899,1.0
+Gemini,Accuracy,210,3.357,3.0,0.892,1.0
+ChatGPT,Completeness,210,3.695,4.0,0.893,1.0
+Claude,Completeness,210,3.414,4.0,0.956,1.0
+Gemini,Completeness,210,2.933,3.0,1.22,2.0
+ChatGPT,Clarity,210,4.005,4.0,0.81,1.0
+Claude,Clarity,210,3.852,4.0,0.854,1.0
+Gemini,Clarity,210,3.548,4.0,0.933,1.0
+ChatGPT,Coherence,210,4.176,4.0,0.72,1.0
+Claude,Coherence,210,4.01,4.0,0.789,2.0
+Gemini,Coherence,210,3.71,4.0,0.9,1.0

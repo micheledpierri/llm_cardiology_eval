@@ -1,0 +1,13 @@
+Model,Criterion,W-statistic,p-value,Normality
+ChatGPT,Accuracy,0.87,0.0,Non-normal (p < 0.05)
+Claude,Accuracy,0.884,0.0,Non-normal (p < 0.05)
+Gemini,Accuracy,0.886,0.0,Non-normal (p < 0.05)
+ChatGPT,Completeness,0.873,0.0,Non-normal (p < 0.05)
+Claude,Completeness,0.878,0.0,Non-normal (p < 0.05)
+Gemini,Completeness,0.912,0.0,Non-normal (p < 0.05)
+ChatGPT,Clarity,0.843,0.0,Non-normal (p < 0.05)
+Claude,Clarity,0.863,0.0,Non-normal (p < 0.05)
+Gemini,Clarity,0.89,0.0,Non-normal (p < 0.05)
+ChatGPT,Coherence,0.79,0.0,Non-normal (p < 0.05)
+Claude,Coherence,0.84,0.0,Non-normal (p < 0.05)
+Gemini,Coherence,0.865,0.0,Non-normal (p < 0.05)
