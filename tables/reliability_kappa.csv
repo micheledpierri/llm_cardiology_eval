@@ -1,0 +1,13 @@
+Criterion,Reviewer Pair,Weighted Kappa,Interpretation
+Accuracy,Reviewer1 vs Reviewer2,0.679,Substantial (0.61–0.80)
+Accuracy,Reviewer1 vs Reviewer3,0.411,Moderate (0.41–0.60)
+Accuracy,Reviewer2 vs Reviewer3,0.557,Moderate (0.41–0.60)
+Completeness,Reviewer1 vs Reviewer2,0.722,Substantial (0.61–0.80)
+Completeness,Reviewer1 vs Reviewer3,0.584,Moderate (0.41–0.60)
+Completeness,Reviewer2 vs Reviewer3,0.672,Substantial (0.61–0.80)
+Clarity,Reviewer1 vs Reviewer2,0.666,Substantial (0.61–0.80)
+Clarity,Reviewer1 vs Reviewer3,0.471,Moderate (0.41–0.60)
+Clarity,Reviewer2 vs Reviewer3,0.639,Substantial (0.61–0.80)
+Coherence,Reviewer1 vs Reviewer2,0.683,Substantial (0.61–0.80)
+Coherence,Reviewer1 vs Reviewer3,0.447,Moderate (0.41–0.60)
+Coherence,Reviewer2 vs Reviewer3,0.623,Substantial (0.61–0.80)
