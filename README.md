@@ -84,9 +84,13 @@ All data used in this study are available in anonymized form under the `/data` d
    pip install -r requirements.txt
 
 3. Run analysis:
+   
    python scripts/1_Power_Analysis.py
+   
    python scripts/2_Reliability_Analysis.py
+   
    python scripts/3_Statistical_Analysis.py
+   
    python scripts/4_Sensitivity_Analysis.py
  
    **All scripts assume that the corresponding Excel files are in the same directory.**
