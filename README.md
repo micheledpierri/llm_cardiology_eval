@@ -72,7 +72,7 @@ To reproduce the figures and statistical analyses, make sure that the datasets a
 
 ## Data Availability
 
-All data used in this study are available in anonymized form under the `/data` directory. Original prompts, evaluation scores, and reliability statistics are included.
+All data used in this study are available in anonymized form under the `/data` directory. 
 
 ## Reproducing the Analysis
 
