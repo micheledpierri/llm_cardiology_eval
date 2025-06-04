@@ -21,7 +21,7 @@ This study systematically compares the performance of three large language model
 - Non-parametric tests (Kruskal–Wallis, Dunn’s test, Mann–Whitney U)
 - Inter-rater reliability (Kendall’s W, Weighted Kappa)
 - Sensitivity analysis (leave-one-reviewer-out)
-- All scripts written in Python 3.9
+- All scripts written in Python 
 
 ## 📁 Repository Structure
 
@@ -46,7 +46,7 @@ All data used in this study are available in anonymized form under the `/data` d
 ## ▶️ Reproducing the Analysis
 
 1. Clone the repository:
-   git clone https://github.com/your-username/llm-cardiology-eval.git
+   git clone https://github.com/micheledpierri/llm-cardiology-eval.git
    cd llm-cardiology-eval
 
 2. Create virtual environment and install dependencies:
