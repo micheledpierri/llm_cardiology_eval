@@ -27,14 +27,8 @@ This study systematically compares the performance of three large language model
 
 llm-cardiology-eval/
 ├── data/
-│   ├── 1_DoctorAI_reorg.xlsx
-│   ├── 1_DoctorAI_words.xlsx
-│   └── 1_DoctorAI_kendall.xlsx
 ├── scripts/
-│   ├── analysis_main.py
-│   ├── interrater_analysis.py
-│   ├── sensitivity_analysis.py
-│   └── plot_figures.py
+│  
 ├── figures/
 │   ├── Figure1_scores_by_model.png
 │   └── Figure2_dunn_heatmap.png
@@ -67,12 +61,7 @@ All data used in this study are available in anonymized form under the `/data` d
 
 This project is licensed under the MIT License – see the LICENSE file for details.
 
-## 📣 Citation
-
-If you use this work, please cite it using the `CITATION.cff` file or the following:
-
-Rossi, M. et al. (2025). Evaluating Large Language Models in Cardiology. GitHub. https://github.com/your-username/llm-cardiology-eval
 
 ## 🤝 Contact
 
-For questions, please contact: michele.rossi@example.com
+For questions, please contact: micheledanilo.pierri@ospedaliriuniti.marche.it
