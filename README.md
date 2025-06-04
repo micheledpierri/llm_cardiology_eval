@@ -1,86 +1,78 @@
-# Multimodal EHR Mining of CABG Patients (MIMIC-IV)
+# Evaluating Large Language Models in Cardiology
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
-[![Requirements](https://img.shields.io/badge/dependencies-requirements.txt-green.svg)](./requirements.txt)
+This repository contains all data, code, and figures related to the study:
 
-This repository contains the complete workflow and codebase for the study:  
-**"Multimodal EHR Analysis of CABG Patients: Integrating Structured and Unstructured Data for Anemia-Outcome Studies in MIMIC-IV"**
+**"Evaluating Large Language Models in Cardiology: A Comparative Study of ChatGPT, Claude, and Gemini"**
 
----
+## 📄 Abstract
 
-## 🧠 Project Overview
+This study systematically compares the performance of three large language models (ChatGPT, Claude, and Gemini) in cardiology-related clinical scenarios. Using 70 simulated prompts representing both pre- and post-diagnostic phases and two user profiles (patient and doctor), responses were rated by three board-certified cardiologists on four quality criteria: scientific accuracy, completeness, clarity, and coherence. Statistical analyses confirmed ChatGPT’s superiority, though no model achieved maximal performance. Results support the need for domain-specific fine-tuning and human-in-the-loop oversight.
 
-This project proposes a methodological case study using the MIMIC-IV database to:
-- Identify patients undergoing **coronary artery bypass grafting (CABG)**;
-- Extract **preoperative hemoglobin** values and classify **anemia severity**;
-- Parse **free-text discharge summaries** to detect **postoperative complications**;
-- Evaluate the feasibility, limitations, and reproducibility of EHR mining workflows.
+## 🧪 Study Design
 
-We focus on structured tables (e.g., `procedures_icd`, `labevents`, `admissions`) and unstructured clinical notes (`noteevents`).
+- Models Evaluated: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google DeepMind)
+- Prompts: 70 clinical questions stratified by diagnostic phase and user type
+- Scoring: 5-point Likert scale, four criteria
+- Reviewers: 3 blinded cardiologists
+- Evaluation Period: September–December 2024
 
----
+## 📊 Methods
 
-## 🗂 Repository Structure
+- Non-parametric tests (Kruskal–Wallis, Dunn’s test, Mann–Whitney U)
+- Inter-rater reliability (Kendall’s W, Weighted Kappa)
+- Sensitivity analysis (leave-one-reviewer-out)
+- All scripts written in Python 3.9
 
-```bash
-mimic-cabg-anemia/
-├── data/                 # (empty, local use only)
-├── notebooks/            # Jupyter notebooks per workflow step
-├── scripts/              # Reusable Python scripts
-├── docs/                 # Figures, diagrams, explanations
-├── README.md             # Project description
-├── requirements.txt      # Required packages
-├── LICENSE               # Open license (MIT)
-└── .gitignore
-```
+## 📁 Repository Structure
 
----
+llm-cardiology-eval/
+├── data/
+│   ├── 1_DoctorAI_reorg.xlsx
+│   ├── 1_DoctorAI_words.xlsx
+│   └── 1_DoctorAI_kendall.xlsx
+├── scripts/
+│   ├── analysis_main.py
+│   ├── interrater_analysis.py
+│   ├── sensitivity_analysis.py
+│   └── plot_figures.py
+├── figures/
+│   ├── Figure1_scores_by_model.png
+│   └── Figure2_dunn_heatmap.png
+├── tables/
+│   ├── Table1_KendallW.csv
+│   ├── ...
+├── LICENSE
+├── CITATION.cff
+└── README.md
 
-## ⚙️ Requirements
+## 🗃️ Data Availability
 
-Install the required packages with:
+All data used in this study are available in anonymized form under the `/data` directory. Original prompts, evaluation scores, and reliability statistics are included.
 
-```bash
-pip install -r requirements.txt
-```
+## ▶️ Reproducing the Analysis
 
-Main packages include:
-- `pandas`
-- `numpy`
-- `scipy`
-- `regex`
-- `jupyter`
-- `matplotlib`
-- `statsmodels`
+1. Clone the repository:
+   git clone https://github.com/your-username/llm-cardiology-eval.git
+   cd llm-cardiology-eval
 
----
+2. Create virtual environment and install dependencies:
+   python -m venv venv
+   source venv/bin/activate  (on Windows: venv\Scripts\activate)
+   pip install -r requirements.txt
 
-## 📊 Notebooks Included
+3. Run main analysis:
+   python scripts/analysis_main.py
 
-| Notebook                                | Description                                |
-|----------------------------------------|--------------------------------------------|
-| `01_cohort_selection.ipynb`            | CABG patient identification via ICD-9      |
-| `02_lab_extraction.ipynb`              | Hemoglobin value extraction and filtering  |
-| `03_anemia_classification.ipynb`       | WHO-based anemia stratification            |
-| `04_note_parsing.ipynb`                | NLP processing of discharge summaries      |
-| `05_stats_analysis.ipynb`              | Statistical testing and visualization      |
+## 📜 License
 
----
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-## 📎 License
+## 📣 Citation
 
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+If you use this work, please cite it using the `CITATION.cff` file or the following:
 
----
+Rossi, M. et al. (2025). Evaluating Large Language Models in Cardiology. GitHub. https://github.com/your-username/llm-cardiology-eval
 
-## 🤝 Acknowledgements
+## 🤝 Contact
 
-This research uses the publicly available [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) and [MIMIC-IV-Note](https://physionet.org/content/mimic-iv-note/2.2/) databases.  
-Access was granted upon completion of the required credentialing and data use agreement via PhysioNet.
-
----
-
-## 📬 Contact
-
-For questions or collaboration proposals, please contact: **Michele Pierri**
+For questions, please contact: michele.rossi@example.com
