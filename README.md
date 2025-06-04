@@ -32,15 +32,36 @@ This study systematically compares the performance of three large language model
 ```text
 llm-cardiology-eval/
 ├── data/
+│   ├── 1_Pilot.xlsx
+│   └── 2_Data.xlslx
 ├── scripts/
+│   ├── 1_Power_analysis.py
+│   ├── 2_reliability_analysis.py
+│   ├── 3_Statistical_Analysis.py
+│   ├── 4_Sensitivity_analysis.py
+│   ├── 5_Figure_1.py
+│   ├── 6_Figure_2.py
+│   ├── 7_Figure_3.py
+│   └── 8_Figure_4.py
 ├── figures/
-│   ├── Figure1_scores_by_model.png
-│   └── Figure2_dunn_heatmap.png
+│   ├── Figure1.pdf
+│   ├── Figure2.pdf
+│   ├── Figure_DiagnosticPhase_wErrorBars.pdf
+│   └── Figure_UserType.pdf
 ├── tables/
-│   ├── Table1_KendallW.csv
-│   └── ...
+│   ├── reliability_kappa.csv
+│   ├── reliability_kendall.csv
+│   ├── reliability_kendall_friedman.csv
+│   ├── sensitivity_analysis.csv
+│   ├── stat_analysis_descriptive.csv
+│   ├── stat_analysis_diagnostic_phase.csv
+│   ├── stat_analysis_kruskal.csv
+│   ├── stat_analysis_posthoc_dunn.csv
+│   ├── stat_analysis_power.csv
+│   ├── stat_analysis_shapiro.csv
+│   └── stat_analysis_user_type.csv
 ├── LICENSE
-├── CITATION.cff
+├── requirements.txt
 └── README.md
 ```
 
