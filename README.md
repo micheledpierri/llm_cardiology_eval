@@ -1,108 +1,86 @@
-# Evaluating Large Language Models in Cardiology
+# Multimodal EHR Mining of CABG Patients (MIMIC-IV)
 
-This repository contains all data, code, and figures related to the study:
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Requirements](https://img.shields.io/badge/dependencies-requirements.txt-green.svg)](./requirements.txt)
 
-**"Evaluating Large Language Models in Cardiology: A Comparative Study of ChatGPT, Claude, and Gemini"**
+This repository contains the complete workflow and codebase for the study:  
+**"Multimodal EHR Analysis of CABG Patients: Integrating Structured and Unstructured Data for Anemia-Outcome Studies in MIMIC-IV"**
 
-[![Python](https://img.shields.io/badge/python-3.12.4-blue.svg)](https://www.python.org/downloads/release/python-3124/)
-[![requirements](https://img.shields.io/badge/install-pip--requirements.txt-brightgreen)](./requirements.txt)
+---
 
+## 🧠 Project Overview
 
-## Abstract
+This project proposes a methodological case study using the MIMIC-IV database to:
+- Identify patients undergoing **coronary artery bypass grafting (CABG)**;
+- Extract **preoperative hemoglobin** values and classify **anemia severity**;
+- Parse **free-text discharge summaries** to detect **postoperative complications**;
+- Evaluate the feasibility, limitations, and reproducibility of EHR mining workflows.
 
-This study systematically compares the performance of three large language models (ChatGPT, Claude, and Gemini) in cardiology-related clinical scenarios. Using 70 simulated prompts representing both pre- and post-diagnostic phases and two user profiles (patient and doctor), responses were rated by three expert cardiologists on four quality criteria: scientific accuracy, completeness, clarity, and coherence. Statistical analyses confirmed ChatGPT’s superiority, though no model achieved maximal performance. Results support the need for domain-specific fine-tuning and human-in-the-loop oversight.
+We focus on structured tables (e.g., `procedures_icd`, `labevents`, `admissions`) and unstructured clinical notes (`noteevents`).
 
-## Study Design
+---
 
-- Models Evaluated: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google DeepMind)
-- Prompts: 70 clinical questions stratified by diagnostic phase and user type
-- Scoring: 5-point Likert scale, four criteria
-- Reviewers: 3 blinded cardiologists
-- Evaluation Period: September–December 2024
+## 🗂 Repository Structure
 
-## Methods
-
-- Non-parametric tests (Kruskal–Wallis, Dunn’s test, Mann–Whitney U)
-- Inter-rater reliability (Kendall’s W, Weighted Kappa)
-- Sensitivity analysis (leave-one-reviewer-out)
-- All scripts written in Python 3.12
-
-## Repository Structure
-
-```text
-llm-cardiology-eval/
-requirements.txt
-├── data/
-│   ├── 1_Pilot.xlsx
-│   ├── 2_Data.xlsx
-├── scripts/
-│   ├── 1_Power_Analysis.py
-│   ├── 2_Reliability_Analysis.py
-│   ├── 3_Statistical_Analysis.py
-│   ├── 4_Sensitivity_Analysis.py
-│   ├── 5_Figure_1.py
-│   ├── 6_Figure_2.py
-│   ├── 7_Figure_3.py
-│   └── 8_Figure_4.py
-├── figures/
-│   ├── Figure1.pdf
-│   ├── Figure2.pdf
-│   ├── Figure_DiagnosticPhase.pdf
-│   └── Figure_UserType.pdf
-├── tables/
-│   ├──reliability_kappa.csv
-│   ├──reliability_kendall.csv
-│   ├──reliability_kendall_fiedman.csv
-│   ├──sensitivity_analysis.csv
-│   ├──reliability_kappa.csv   
-│   ├──stat_analysis_descriptive.csv
-│   ├──stat_analysis_diagnostic_phase.csv
-│   ├──stat_analysis_kruskal.csv
-│   ├──stat_analysis_posthoc_dunn.csv
-│   ├──stat_analysis_power.csv
-│   ├──stat_analysis_shapiro.csv
-│   └──stat_analysis_user_type.csv
-├── LICENSE
-├── CITATION.cff
-└── README.md
+```bash
+mimic-cabg-anemia/
+├── data/                 # (empty, local use only)
+├── notebooks/            # Jupyter notebooks per workflow step
+├── scripts/              # Reusable Python scripts
+├── docs/                 # Figures, diagrams, explanations
+├── README.md             # Project description
+├── requirements.txt      # Required packages
+├── LICENSE               # Open license (MIT)
+└── .gitignore
 ```
-## Reproducibility
-To reproduce the figures and statistical analyses, make sure that the datasets and scripts are correctly located.
-**All scripts assume that the corresponding Excel files are in the same directory.** If you keep datasets in a separate folder (e.g., `data/`), update the `file_path` variable at the beginning of each script accordingly.
 
-## Data Availability
+---
 
-All data used in this study are available in anonymized form under the `/data` directory. 
+## ⚙️ Requirements
 
-## Reproducing the Analysis
+Install the required packages with:
 
-1. Clone the repository:
-   git clone https://github.com/micheledpierri/llm-cardiology-eval.git
-   cd llm-cardiology-eval
+```bash
+pip install -r requirements.txt
+```
 
-2. Install required Python packages:
-   pip install -r requirements.txt
+Main packages include:
+- `pandas`
+- `numpy`
+- `scipy`
+- `regex`
+- `jupyter`
+- `matplotlib`
+- `statsmodels`
 
-3. Run analysis:
-   
-   python scripts/1_Power_Analysis.py
-   
-   python scripts/2_Reliability_Analysis.py
-   
-   python scripts/3_Statistical_Analysis.py
-   
-   python scripts/4_Sensitivity_Analysis.py
- 
-   **All scripts assume that the corresponding Excel files are in the same directory.**
+---
 
-## License
+## 📊 Notebooks Included
 
-This project is licensed under the MIT License – see the LICENSE file for details.
+| Notebook                                | Description                                |
+|----------------------------------------|--------------------------------------------|
+| `01_cohort_selection.ipynb`            | CABG patient identification via ICD-9      |
+| `02_lab_extraction.ipynb`              | Hemoglobin value extraction and filtering  |
+| `03_anemia_classification.ipynb`       | WHO-based anemia stratification            |
+| `04_note_parsing.ipynb`                | NLP processing of discharge summaries      |
+| `05_stats_analysis.ipynb`              | Statistical testing and visualization      |
 
-## Citation
+---
 
-If you use this work, please cite it using the `CITATION.cff` file
+## 📎 License
 
-## Contact
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
-For questions, please contact: micheledanilo.pierri@ospedaliriuniti.marche.it
+---
+
+## 🤝 Acknowledgements
+
+This research uses the publicly available [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) and [MIMIC-IV-Note](https://physionet.org/content/mimic-iv-note/2.2/) databases.  
+Access was granted upon completion of the required credentialing and data use agreement via PhysioNet.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration proposals, please contact: **Michele Pierri**
