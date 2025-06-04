@@ -1,3 +1,7 @@
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+[![Requirements](https://img.shields.io/badge/dependencies-requirements.txt-green.svg)](./requirements.txt)
+
+
 # Evaluating Large Language Models in Cardiology
 
 This repository contains all data, code, and figures related to the study:
