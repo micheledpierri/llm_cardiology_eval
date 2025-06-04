@@ -62,6 +62,9 @@ All data used in this study are available in anonymized form under the `/data` d
 3. Run main analysis:
    python scripts/analysis_main.py
 
+⚠️ Scripts expect data files to be in the same folder. Copy `.csv`/`.xlsx` files into the script directory before running.
+
+
 ## 📜 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
