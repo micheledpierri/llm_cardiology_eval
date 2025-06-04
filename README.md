@@ -25,19 +25,20 @@ This study systematically compares the performance of three large language model
 
 ## 📁 Repository Structure
 
+```text
 llm-cardiology-eval/
 ├── data/
 ├── scripts/
-│  
 ├── figures/
 │   ├── Figure1_scores_by_model.png
 │   └── Figure2_dunn_heatmap.png
 ├── tables/
 │   ├── Table1_KendallW.csv
-│   ├── ...
+│   └── ...
 ├── LICENSE
 ├── CITATION.cff
 └── README.md
+```
 
 ## 🗃️ Data Availability
 
